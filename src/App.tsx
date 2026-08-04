@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { Routes, Route, NavLink, useLocation } from 'react-router-dom';
-import { BookOpen, Boxes, Gauge, History, LayoutDashboard, Settings, Sparkles, Trophy, Wand2 } from 'lucide-react';
+import { BookOpen, Boxes, Camera, Gauge, History, LayoutDashboard, ScanEye, Settings, Sparkles, Trophy, Wand2 } from 'lucide-react';
 import LandingPage from './pages/LandingPage';
 import DashboardPage from './pages/DashboardPage';
 import SolverPage from './pages/SolverPage';
@@ -9,13 +9,19 @@ import HistoryPage from './pages/HistoryPage';
 import SettingsPage from './pages/SettingsPage';
 import CubeEditorPage from './pages/CubeEditorPage';
 import ScramblePage from './pages/ScramblePage';
+import ScanCubePage from './pages/ScanCubePage';
+import ArPage from './pages/ArPage';
+import Footer from './components/Footer';
+import AIAssistant from './components/AIAssistant';
 
 const navItems = [
   { to: '/', label: 'Home', icon: Sparkles },
   { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { to: '/solver', label: 'Solver', icon: Boxes },
+  { to: '/scan', label: 'Scan Cube', icon: Camera },
   { to: '/editor', label: 'Cube Editor', icon: Wand2 },
   { to: '/scramble', label: 'Scramble', icon: Trophy },
+  { to: '/ar', label: 'AR Ready', icon: ScanEye },
   { to: '/learning', label: 'Academy', icon: BookOpen },
   { to: '/history', label: 'History', icon: History },
   { to: '/settings', label: 'Settings', icon: Settings },
@@ -78,8 +84,10 @@ function App() {
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/dashboard" element={<DashboardPage />} />
                 <Route path="/solver" element={<SolverPage />} />
+                <Route path="/scan" element={<ScanCubePage />} />
                 <Route path="/editor" element={<CubeEditorPage />} />
                 <Route path="/scramble" element={<ScramblePage />} />
+                <Route path="/ar" element={<ArPage />} />
                 <Route path="/learning" element={<LearningPage />} />
                 <Route path="/history" element={<HistoryPage />} />
                 <Route path="/settings" element={<SettingsPage />} />
@@ -88,6 +96,10 @@ function App() {
           </AnimatePresence>
         </main>
       </div>
+      <div className="mx-auto max-w-7xl px-4 pb-6 lg:px-6">
+        <Footer />
+      </div>
+      <AIAssistant />
     </div>
   );
 }
