@@ -11,6 +11,9 @@ import CubeEditorPage from './pages/CubeEditorPage';
 import ScramblePage from './pages/ScramblePage';
 import ScanCubePage from './pages/ScanCubePage';
 import ArPage from './pages/ArPage';
+import CoursesPage from './pages/CoursesPage';
+import CourseLevelPage from './pages/CourseLevelPage';
+import ChapterPage from './pages/ChapterPage';
 import Footer from './components/Footer';
 import AIAssistant from './components/AIAssistant';
 
@@ -22,6 +25,7 @@ const navItems = [
   { to: '/editor', label: 'Cube Editor', icon: Wand2 },
   { to: '/scramble', label: 'Scramble', icon: Trophy },
   { to: '/ar', label: 'AR Ready', icon: ScanEye },
+  { to: '/courses', label: 'Cours', icon: BookOpen },
   { to: '/learning', label: 'Academy', icon: BookOpen },
   { to: '/history', label: 'History', icon: History },
   { to: '/settings', label: 'Settings', icon: Settings },
@@ -88,6 +92,9 @@ function App() {
                 <Route path="/editor" element={<CubeEditorPage />} />
                 <Route path="/scramble" element={<ScramblePage />} />
                 <Route path="/ar" element={<ArPage />} />
+                <Route path="/courses" element={<CoursesPage />} />
+                <Route path="/courses/:levelSlug" element={<CourseLevelPage />} />
+                <Route path="/courses/:levelSlug/:chapterSlug" element={<ChapterPage />} />
                 <Route path="/learning" element={<LearningPage />} />
                 <Route path="/history" element={<HistoryPage />} />
                 <Route path="/settings" element={<SettingsPage />} />
