@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, Sparkles } from 'lucide-react';
 const links = [
   { label: 'Developer', value: 'Yahya Cherkani' },
   { label: 'GitHub', value: 'https://github.com/cherkaniyahya4-hub', href: 'https://github.com/cherkaniyahya4-hub' },
-  { label: 'LinkedIn', value: 'https://www.linkedin.com', href: 'https://www.linkedin.com' },
+  { label: 'LinkedIn', value: 'https://www.linkedin.com/in/yahyacherkani/', href: 'https://www.linkedin.com/in/yahyacherkani/' },
   { label: 'Email', value: 'cherkaniyahya4@gmail.com', href: 'mailto:cherkaniyahya4@gmail.com' },
 ];
 
@@ -38,7 +38,7 @@ export default function Footer() {
         <a href="https://github.com/cherkaniyahya4-hub" target="_blank" rel="noreferrer" className="rounded-full bg-white/5 p-2 text-slate-300 transition hover:text-white">
           <Github className="h-4 w-4" />
         </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="rounded-full bg-white/5 p-2 text-slate-300 transition hover:text-white">
+        <a href="https://www.linkedin.com/in/yahyacherkani/" target="_blank" rel="noreferrer" className="rounded-full bg-white/5 p-2 text-slate-300 transition hover:text-white">
           <Linkedin className="h-4 w-4" />
         </a>
         <a href="mailto:cherkaniyahya4@gmail.com" className="rounded-full bg-white/5 p-2 text-slate-300 transition hover:text-white">
