@@ -25,7 +25,7 @@ const navItems = [
   { to: '/editor', label: 'Cube Editor', icon: Wand2 },
   { to: '/scramble', label: 'Scramble', icon: Trophy },
   { to: '/ar', label: 'AR Ready', icon: ScanEye },
-  { to: '/courses', label: 'Cours', icon: BookOpen },
+  { to: '/courses', label: 'Lessons', icon: BookOpen },
   { to: '/learning', label: 'Academy', icon: BookOpen },
   { to: '/history', label: 'History', icon: History },
   { to: '/settings', label: 'Settings', icon: Settings },
